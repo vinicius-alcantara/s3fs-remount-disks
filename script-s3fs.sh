@@ -77,7 +77,7 @@ restart_s3fs_disks() {
          local INF6="<b>🚨FAILED: Falha ao montar discos!!! - Por favor verifique pessoalmente!!!</b> ❌ ❌ ❌";
          FULL_MESSAGE="$FULL_MESSAGE"$'\n'"$INF6";
 	 send_notification_telegram;
-	 send_notification_email
+	 send_notification_email;
       fi
     fi
 }
